@@ -1,0 +1,41 @@
+<html>  
+    <head>  
+      <link rel="stylesheet" href="styles.css">    
+    </head>  
+    <body>  
+        <div id = "boxes"> 
+			<div id = "upparbox"> 
+            <h1>STENO : <br>The Next Gen Tool</h1> 
+            </div>
+            <div id = "leftbox"> 
+                <button class="submit-btn" type="button">Keywords</button><br>
+				<button class="submit-btn" type="button">Context</button><br>
+				<button class="submit-btn" type="button">Words Stressed</button><br>
+				<button class="submit-btn" type="button">Actors</button><br>
+				<button class="submit-btn" type="button">Actions</button><br>
+				<button class="submit-btn" type="button">MOM</button><br>
+				
+            </div>  
+              
+            <div id = "rightbox"> 
+                <div class="form-box">
+					<form name="myform">
+						<input type="text" name="name" value="" class="submit-field topic" placeholder="Enter Topic">
+						<button class="add-btn" type="button" onclick="myFunction()">Add Topic</button>
+						<textarea class="textareas" id="textarea" rows="5" cols="50">
+						</textarea>
+						<button class="start-btn" type="button" onclick="">START</button>
+						<textarea class="output-textareas" id="textarea" rows="10" cols="100">
+						</textarea>
+					</form>
+				</div> 
+				
+            </div> 
+        </div> 
+		<script>
+			function myFunction() {
+			document.getElementById("textarea").value = document.myform.name.value;
+}
+</script>
+    </body>  
+</html> 
